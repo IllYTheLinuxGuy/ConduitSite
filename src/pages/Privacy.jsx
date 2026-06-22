@@ -7,10 +7,10 @@ export default function Privacy() {
     <section className="mx-auto max-w-3xl px-6 pt-32 pb-24">
       <motion.div className="mb-12 text-center" {...fadeUp}>
         <h1 className="text-4xl font-bold sm:text-5xl">Privacy Policy</h1>
-        <p className="mt-4 text-text-dim">Last updated: June 2026</p>
+        <p className="mt-4 text-slate-400">Last updated: June 2026</p>
       </motion.div>
 
-      <motion.div className="space-y-8 text-sm leading-relaxed text-text-dim" {...fadeUp} transition={{ delay: 0.1 }}>
+      <motion.div className="space-y-8 text-sm leading-relaxed text-slate-400" {...fadeUp} transition={{ delay: 0.1 }}>
         <div>
           <h2 className="mb-3 text-lg font-semibold text-white">Data Collection</h2>
           <p>Conduit collects anonymous, aggregated usage data only when you explicitly opt in. This includes non-personal information such as operating system type, app version, and feature usage frequency.</p>
@@ -39,7 +39,7 @@ export default function Privacy() {
 
         <div>
           <h2 className="mb-3 text-lg font-semibold text-white">Contact</h2>
-          <p>Questions? Email <a href="mailto:kelennaokere@gmail.com" className="text-purple-light underline underline-offset-2">kelennaokere@gmail.com</a>.</p>
+          <p>Questions? Email <a href="mailto:kelennaokere@gmail.com" className="text-[#22c55e] underline underline-offset-2">kelennaokere@gmail.com</a>.</p>
         </div>
       </motion.div>
     </section>

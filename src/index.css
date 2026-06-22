@@ -1,52 +1,59 @@
 @import "tailwindcss";
 
 @theme {
-  --color-purple: #b250b2;
-  --color-purple-light: #c060c0;
-  --color-purple-dark: #8a3a8a;
-  --color-surface: #100f1a;
-  --color-card: rgba(22, 20, 35, 0.6);
-  --color-text-dim: #8a84a0;
-  --color-success: #2ed573;
+  --color-surface: #020617;
+  --color-card: #0f172a;
+  --color-text-dim: #94a3b8;
+  --color-accent: #22c55e;
+  --color-accent-muted: #164e2b;
   --font-sans: 'Inter', system-ui, sans-serif;
 }
 
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
+  min-height: 100vh;
   font-family: var(--font-sans);
+  line-height: 1.75;
+  color: #e2e8f0;
+  background: var(--color-surface);
 }
 
-.glow {
-  box-shadow: 0 0 40px rgba(178, 80, 178, 0.15);
+button,
+input,
+textarea,
+select,
+a {
+  font: inherit;
 }
 
-.glow-text {
-  text-shadow: 0 0 40px rgba(178, 80, 178, 0.3);
+p,
+li,
+dd,
+dt,
+blockquote {
+  line-height: 1.75;
 }
 
-.glass {
-  background: var(--color-card);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(178, 80, 178, 0.08);
+pre,
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
 
-.gradient-border {
-  position: relative;
-}
-
-.gradient-border::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(135deg, rgba(178,80,178,0.3), transparent, rgba(178,80,178,0.1));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-}
-
-.purple-glow {
-  box-shadow: 0 0 60px rgba(178, 80, 178, 0.1);
+button,
+a {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
 }
 
 @view-transition {

@@ -11,18 +11,15 @@ export default function Nav() {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-white/5 bg-[#0b0a12]/80 backdrop-blur-xl">
+    <nav className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/98">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <VTLink to="/" className="flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-purple text-sm font-bold text-white">C</div>
-          <span className="text-lg font-bold tracking-tight">Conduit</span>
-        </VTLink>
-        <div className="flex items-center gap-6 text-sm text-text-dim">
+        <div className="text-lg font-semibold text-white">Conduit</div>
+        <div className="flex items-center gap-6 text-sm text-slate-400">
           {links.map(l => (
             <VTLink
               key={l.to}
               to={l.to}
-              className={`transition-colors hover:text-white ${pathname === l.to ? 'text-white' : ''}`}
+              className={`transition-colors hover:text-slate-100 ${pathname === l.to ? 'text-slate-100' : ''}`}
             >
               {l.label}
             </VTLink>
